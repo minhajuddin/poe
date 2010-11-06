@@ -5,13 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "poe"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{utility to configure cijoe}
+    gem.description = %Q{utility to configure cijoe}
     gem.email = "minhajuddin@cosmicvent.com"
     gem.homepage = "http://github.com/minhajuddin/poe"
     gem.authors = ["Khaja Minhajuddin"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.add_development_dependency "cijoe", ">= 0"
+    gem.executables       = %w( poe )
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
