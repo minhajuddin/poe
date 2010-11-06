@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
      "VERSION",
      "bin/poe",
      "lib/poe.rb",
+     "poe.gemspec",
      "test/helper.rb",
      "test/test_poe.rb"
   ]
