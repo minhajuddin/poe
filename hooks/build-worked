@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require File.join(File.dirname(__FILE__), 'common')
+
+#TODO include the name of the project in the subject
+send_mail :subject => "OK: Build successful for #{ENV['SHA']} #{ENV['MESSAGE']}"
