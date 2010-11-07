@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{poe}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Khaja Minhajuddin"]
@@ -21,11 +21,16 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
      ".gitignore",
+     "Gemfile",
      "LICENSE",
      "README.md",
      "Rakefile",
      "VERSION",
      "bin/poe",
+     "hooks/build-failed",
+     "hooks/build-worked",
+     "hooks/common.rb",
+     "hooks/post-update",
      "lib/poe.rb",
      "poe.gemspec",
      "test/helper.rb",
