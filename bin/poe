@@ -1,3 +1,7 @@
 #!/usr/bin/env ruby
 
-puts 'enough talk let\' fight'
+require File.join(File.dirname(__FILE__), '../lib/poe')
+
+puts 'configuring your repo....'
+Poe.new(ARGV[0]).run
+puts '--------------------'
