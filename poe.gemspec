@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Khaja Minhajuddin"]
-  s.date = %q{2010-11-07}
+  s.date = %q{2010-11-08}
   s.default_executable = %q{poe}
   s.description = %q{utility to configure cijoe}
   s.email = %q{minhajuddin@cosmicvent.com}
@@ -33,6 +33,7 @@ Gem::Specification.new do |s|
      "hooks/post-update",
      "lib/poe.rb",
      "poe.gemspec",
+     "poe.yml",
      "test/helper.rb",
      "test/test_poe.rb"
   ]
