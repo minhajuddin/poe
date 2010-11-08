@@ -1,3 +1,5 @@
+require 'fileutils'
+
 class Poe
 
   @@hooks = ['build-failed', 'build-worked', 'common.rb']
@@ -34,7 +36,7 @@ class Poe
   end
 
   def setup_runner
-    `git config --add cijoe.runner bundle exec rspec spec`
+    `cd #@dir && git config --add cijoe.runner "bundle exec rspec spec"`
   end
 
   def home_dir
@@ -43,6 +45,7 @@ class Poe
 
   def valid?
     errors << "'#{@dir}' does not exist" unless File.exists?(@dir)
+    errors << "'#{@dir}' is not a git repo" unless File.exists?(File.join(@dir, '.git'))
     errors.empty?
   end
 
